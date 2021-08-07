@@ -20,23 +20,23 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="200" height="200" style="background-color:#FFFFFF;">
+  <a href="https://github.com/palacharlanarendra/photo-compressor">
+    <img src="images/flake.png" alt="Logo" width="200" height="200" style="background-color:#FFFFFF;">
   </a>
 
-  <h3 align="center">flake</h3>
+  <h3 align="center">Flake</h3>
 
   <p align="center">
-    chisel your photos
+    Chisel Your Photos
     <br />
     <a href="https://github.com/sohailshaik8328/readme"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/palacharlanarendra/download-me/issues">Issues</a>
+    <a href="https://github.com/palacharlanarendra/photo-compressor/issues">Issues</a>
     ·
-    <a href="https://github.com/palacharlanarendra/download-me/pulls">Pull Requests</a>
+    <a href="https://github.com/palacharlanarendra/photo-compressor/pulls">Pull Requests</a>
     .
-      <a href="https://github.com/palacharlanarendra/download-me/commits">Commits</a>
+      <a href="https://github.com/palacharlanarendra/photo-compressor/commits">Commits</a>
     .
     </p>
 </p>
@@ -74,7 +74,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[!['Template][product-screenshot]](./images/template.png)
+[!['Template][product-screenshot]](./images/some.png)
 
 Many images you see on the Internet today have undergone compression for various reasons. Image compression can benefit users by having pictures load faster and webpages use up less space on a Web host. Image compression does not reduce the physical size of an image but instead compresses the data that makes up the image into a smaller size. 
 
@@ -87,19 +87,19 @@ Here's why:
 
 ### Home
 
-[!['Home Page][home-screenshot]](images/template.png)
+[!['Home Page][home-screenshot]](images/some.png)
 
-### About Us 
+### Image
 
-[!['About Page][about-screenshot]](images/about.png)
+[!['Image Page][about-screenshot]](images/s2.png)
 
-### Contact 
+### Email 
 
-[!['Contact Page][contact-screenshot]](images/contact.png)
+[!['Email][contact-screenshot]](images/s3.png)
 
 ### Enter URL
 
-[!['Input][input-screenshot]](images/input.png)
+[!['Input][input-screenshot]](images/some.png)
 
 
 
@@ -136,7 +136,7 @@ This is for how to list things you need to use the software and how to install t
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/palacharlanarendra/download-me
+   git clone https://github.com/palacharlanarendra/photo-compressor
    ```
 2. Install NPM packages
    ```sh
@@ -153,13 +153,13 @@ This is for how to list things you need to use the software and how to install t
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-In many situations we are not able to download the videos from youtube. So, here we are.
+In many situations we are unable to compress multi-format picture with one compressor. So, here we are.
 
- - Open the terminal and navigate to the project folder where the code.js file is visible.
- - Execute `node code.js` command.
+ - Open the terminal and navigate to the project folder where the index.js file is visible.
+ - Execute `start index.js` command.
  - Run the localhost:5000 in the browser.
  - Select the image which you want to reduce.
- - click on the submit and email it will sent to your email address with reduce size
+ - click on the submit and email it will sent to your email address with additional info with 
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
@@ -168,7 +168,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/palacharlanarendra/download-me/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/palacharlanarendra/photo-compressor/issues) for a list of proposed features (and known issues).
 
 
 
@@ -212,7 +212,7 @@ ravindra shasthri -
 - [Github](https://github.com/)
 
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/palacharlanarendra/photo-compressor](https://github.com/your_username/repo_name)
 
 
 ## Credit where credit's due
