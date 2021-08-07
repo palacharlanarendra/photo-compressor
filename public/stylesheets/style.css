@@ -1,8 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
 html,
 body,
 div,
@@ -107,9 +102,8 @@ section {
 }
 body {
   line-height: 1;
-}
-html {
-  font-size: 16px;
+  font-family: 'Georama', sans-serif;
+  height: 100vh;
 }
 ol,
 ul {
@@ -131,269 +125,140 @@ table {
   border-spacing: 0;
 }
 
-/*----login page----*/
-
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: sans-serif;
-  line-height: 1.5;
+/* Custom styles */
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 850px;
+  margin: auto;
   width: 100%;
-  margin: 0 auto;
-  padding: 0 32px;
-}
-
-p {
-  color: #2d2d2d;
-  font-size: 18px;
-  margin-bottom: 20px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .flex {
   display: flex;
+  /* align-items: center; */
   justify-content: space-between;
-  align-items: center;
 }
-.flex-left {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-}
-.flex-center {
-  display: flex;
-  align-items: center;
-}
-.flex-left a {
-  margin-right: 20px;
-}
-.flex-48 {
-  flex: 0 1 48%;
-}
-
-main {
-  display: flex;
-  align-items: center;
-  height: 100vh;
-}
-
-.logo-img {
-  border-radius: 50%;
-  height: 100px;
-  width: 100px;
-}
-strong {
-  font-size: 32px;
-  font-weight: 600;
-  color: #2d2d2d;
-}
-
-h2 {
-  font-size: 3rem;
-  margin-bottom: 30px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-a {
-  text-decoration: none;
-}
-
 .center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-45 {
+  flex: 0 1 45%;
+}
+/* Form */
+.form_heading {
+  font-size: 1.5rem;
+  font-weight: 3rem;
+  text-align: center;
+  color: #104080;
+  margin-bottom: 2rem;
+}
+.text-align {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 10rem;
+  color: #104080;
+  margin-bottom: 1rem;
+}
+#color {
+  color: #104080;
+  font-size: 10px;
+}
+p {
+  font-size: 30px;
+}
+#btn-prop {
+  background-color: #2664b6;
+  width: 8rem;
+  text-align: center;
+  color: white;
+}
+.btn-wrap button {
+  text-align: center;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+}
+.text-align-para {
+  font-size: 1.5rem;
+}
+.login_left,
+.login_right {
+  padding: 3rem;
+}
+.form_section input {
+  display: block;
+  width: 90%;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 0;
+  border-bottom: 1px solid #415abe;
+  outline: 0;
+}
+.form_section input:focus {
+  border: 1px solid #57983f;
+}
+.btn {
+  background-color: #13297e;
+  padding: 0.8rem 1.5rem;
+  color: #ffffff;
+  font-size: 1.1rem;
+  border: 0;
+  outline: 0;
+  border-radius: 6px;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #1b73e9;
+}
+.login_right {
   text-align: center;
 }
-
-legend {
-  font-size: 32px;
-  text-transform: capitalize;
-  font-weight: 700;
-  text-align: center;
-  color: #dd3b39;
-  margin-bottom: 20px;
+.login_form {
+  box-shadow: -2px -2px 6px gray, 2px 2px 6px gray;
+  padding: 3rem;
 }
-
-.form-control-btn {
-  background-color: #d53c36;
-  display: inline-block;
-  width: 100%;
-  padding: 16px 24px;
-  margin-bottom: 30px;
-  border-radius: 10px;
-  border: none;
-  color: #ffff;
-  text-transform: uppercase;
+.login_total {
+  margin: 100px auto;
+  padding: 2rem;
 }
-
-article {
-  width: 60%;
-}
-.form-control {
-  display: inline-block;
-  background-color: #f3f3f3;
-  width: 100%;
-  padding: 16px 24px;
-  margin-bottom: 16px;
-  border-radius: 10px;
-  border: none;
-}
-.form-1 {
-  background-color: #ffff;
-  width: 100%;
-  padding: 28px;
-  border-radius: 2%;
-  box-shadow: rgba(73, 73, 87, 0.2) 0px 7px 29px 0px;
-}
-
-.icon a {
-  font-size: 24px;
-  color: green;
-}
-
-/*----register----*/
-.form-control-1 {
-  display: inline-block;
-  background-color: #f3f3f3;
-  width: 70%;
-  padding: 16px 24px;
-  margin-bottom: 16px;
-  border-radius: 10px;
-  border: none;
-  margin-left: 80px;
-}
-
-.form-control-btn2 {
-  background-color: #d53c36;
-  display: inline-block;
-  width: 50%;
-  padding: 16px 24px;
-  margin-bottom: 30px;
-  border-radius: 10px;
-  border: none;
-  color: #ffff;
-  text-transform: uppercase;
-  margin-left: 130px;
-}
-
-.reg-forgetPws {
-  font-size: 18px;
-  color: tomato;
-  text-align: center;
-  text-transform: uppercase;
-}
-.reg-forgetPws a {
-  color: tomato;
-  font-size: 18px;
-  text-transform: uppercase;
-}
-
-/*----home----*/
-
-.header {
-  background-color: #193c62;
-  text-transform: uppercase;
-  padding: 20px;
-}
-
-nav a {
-  margin-right: 32px;
-  font-size: 18px;
-  color: #ffff;
-}
-.hover :hover {
-  color: greenyellow;
-}
-
-em {
-  font-size: 40px;
-  text-transform: uppercase;
-}
-h1 {
-  font-size: 32px;
-  text-align: center;
-  text-transform: uppercase;
-}
-.article1 {
-  width: 100%;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: aliceblue;
-  padding: 40px;
-  border-radius: 8%;
-}
-h5 {
-  font-size: 28px;
-  font-weight: 600;
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-.compress-img {
-  text-align: center;
-  margin: 20px;
-}
-footer {
-  text-align: center;
-  background-color: #193c62;
-  text-transform: uppercase;
-  padding: 20px;
-  color: #ffff;
-}
-
-/*----main----*/
-
-.form-control2 {
-  display: inline-block;
-  background-color: #f3f3f3;
+.sign_in_img {
   width: 80%;
-  padding: 16px 24px;
-  margin-bottom: 16px;
-  border-radius: 10px;
-  border: none;
+  margin-bottom: 2rem;
 }
 
-.box {
-  width: 50%;
-  text-align: center;
-  text-transform: uppercase;
-  margin-left: 320px;
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+/* For medium screen */
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+  .flex-45 {
+    flex: 0 1 45%;
+  }
+  .login_form {
+    flex-direction: column;
+  }
 }
-.form-control-btn3 {
-  background-color: #d53c36;
-  display: inline-block;
-  width: 50%;
-  padding: 16px 24px;
-  margin-bottom: 30px;
-  border-radius: 10px;
-  border: none;
-  color: #ffff;
-  text-transform: uppercase;
-}
-@media screen and (max-width: 1040px) {
+
+/* For small screen */
+
+@media screen and (max-width: 400px) {
   html {
     font-size: 14px;
   }
-  .container {
-    width: 100%;
+  .flex-45 {
+    flex: 0 1 100%;
   }
-  .article1 {
-    width: 100%;
+  .login_form {
+    flex-direction: column;
   }
-  .flex-48 {
+  .sign_in_img {
     width: 100%;
   }
 }
-/* @media only screen and (max-width: 740px) {
-    body {
-      background-color: lightblue;
-    }
-  } */
-/* @media only screen and (max-width: 540px) {
-    body {
-      background-color: lightblue;
-    }
-  } */

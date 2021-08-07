@@ -66,6 +66,9 @@ app.post('/', upload.single('image'), (req, res, next) => {
 app.post('/compress/uploads/:name/:ext', async (req, res) => {
   var recieverMail = req.body.email;
   console.log(req.params.name);
+  let yourFilesize = fs.statSync('uploads/' + req.params.name).size;
+  var BYTES_PER_KB = 1024;
+  var uploadFiles = yourFilesize / BYTES_PER_KB;
   const files = await imagemin(['uploads/' + req.params.name], {
     destination: 'output',
     plugins: [
@@ -106,14 +109,18 @@ app.post('/compress/uploads/:name/:ext', async (req, res) => {
 
       // Step 3
       transporter.sendMail(mailOptions, (err, data) => {
+        var emailSent = 'Email Successfully Sent!';
+        var emailerror = 'Error Occured while Sending Mail!';
         if (err) {
-          return log('Error occurs');
+          return log(emailerror);
         }
-        return log('Email sent!!!');
+        return log(emailSent);
       });
     }
   });
-
+  let yourFilesize2 = fs.statSync('output/' + req.params.name).size;
+  var BYTES_PER_KB = 1024;
+  var downloadFiles = yourFilesize2 / BYTES_PER_KB;
   fs.unlink('uploads/' + req.params.name, (err) => {
     if (err) {
       console.log(err);
@@ -130,6 +137,14 @@ app.post('/compress/uploads/:name/:ext', async (req, res) => {
       }
     });
   }, 10000);
+  console.log(uploadFiles, downloadFiles);
+  var difference = uploadFiles - downloadFiles;
+  let percentage = (difference / uploadFiles) * 100;
+  res.render('email', {
+    uploadFiles: uploadFiles,
+    downloadFiles: downloadFiles,
+    percentage: percentage,
+  });
 });
 
 app.listen(port, function () {

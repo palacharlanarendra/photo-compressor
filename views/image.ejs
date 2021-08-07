@@ -1,42 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>home</title>
-    <link rel="stylesheet" href="stylesheets/style.css">
-</head>
-<body>
-    <header class="header">
-        <div class="container flex">
-            <a href=""></a>
-            <nav>
-                <ol class="flex hover">
-                    <li><a href="home.html">home</a></li>
-                    <li><a href="about.html">about</a></li>
-                    <li><a href="index.html">login</a></li>
-                    <li><a href="register.html">register</a></li>
-                </ol>
-            </nav>
-        </div>
-    </header>
-    <main class="container flex-48">
-                <img width="400" height="400" src="<%= url %>" />
-                <fieldset>
-                  <form class="box" action="/compress/uploads/<%=name%>/<%=ext%>" method="POST">
-                      <legend>Compress IMAGE</legend>
-                      <input type="email" name="email" />
-                      <input type="submit" value="Send to Email" />
-                  </form>
-                </fieldset>
+    <link rel="stylesheet" href="stylesheets/style.css" />
+  </head>
+  <body>
+    <section class="login_total">
+      <div class="container">
+        <h3 class="text-align">Flake</h3>
+        <p class="text-align text-align-para">CHISEL YOUR PHOTOS</p>
+        <section class="login_form flex">
+          <div class="login_left flex-45">
+            <img
+              class="sign_in_img"
+              width="400"
+              height="200"
+              src="<%= url %>"
+            />
+          </div>
+
+          <div class="login_right form_section flex-45 center">
+            <form
+              class="box"
+              action="/compress/uploads/<%=name%>/<%=ext%>"
+              method="POST"
+            >
+              <legend class="form_heading">Upload your picture here</legend>
+              <fieldset>
+                <input
+                  type="email"
+                  name="email"
+                  id="color"
+                  placeholder="Recipient's Email"
+                />
+              </fieldset>
+              <a href="#">
+                <div class="btn-wrap">
+                  <button id="btn-prop" type="submit">Dowload & Mail</button>
+                </div>
+              </a>
             </form>
-        </fieldset>
-    </main>
-    <footer id="contact">
-        <div>
-            <small>copyrights &copy; altcampus</small>
-        </div>
-    </footer>
-</body>
+          </div>
+        </section>
+      </div>
+    </section>
+  </body>
 </html>
