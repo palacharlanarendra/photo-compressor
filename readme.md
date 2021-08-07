@@ -29,7 +29,7 @@
   <p align="center">
     chisel your photos
     <br />
-    <a href="https://github.com/ravindrapv/readme"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/sohailshaik8328/readme"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/palacharlanarendra/download-me/issues">Issues</a>
@@ -77,12 +77,6 @@
 [!['Template][product-screenshot]](./images/template.png)
 
 Many images you see on the Internet today have undergone compression for various reasons. Image compression can benefit users by having pictures load faster and webpages use up less space on a Web host. Image compression does not reduce the physical size of an image but instead compresses the data that makes up the image into a smaller size. 
-
-Image compression is typically performed through an image/data compression algorithm or codec. Typically such codecs/algorithms apply different techniques to reduce the image size, such as by:
-
-* Specifying all similarly colored pixels by the color name, code and the number of pixels. This way one pixel can correspond to hundreds or thousands of pixels.
-* The image is created and represented using mathematical wavelets.
-* Splitting the image into several parts, each identifiable using a fractal.
 
 Here's why:
 * Quality progressive or layer progressive: The bitstream successively refines the reconstructed image
@@ -248,4 +242,3 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 [about-screenshot]: images/about.png
 [contact-screenshot]: images/contact.png
 [input-screenshot]: images/input.png
-
