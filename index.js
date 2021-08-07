@@ -98,7 +98,13 @@ app.post('/compress/uploads/:name/:ext', async (req, res) => {
         from: 'taruntej.me@gmail.com',
         to: recieverMail,
         subject: 'Download your files',
-        text: 'Hello user , Here is your compressed file, please find your attachment.',
+        text: `Hello user , Here is your compressed file, please find your attachment.
+        Uploaded file is ${uploadFiles}KB,
+        Compressed file is  ${downloadFiles} KB,
+        Your Images are now ${
+          ((uploadFiles - downloadFiles) / uploadFiles) * 100
+        }% smaller!`,
+
         attachments: [
           {
             filename: req.params.name,
@@ -137,14 +143,6 @@ app.post('/compress/uploads/:name/:ext', async (req, res) => {
       }
     });
   }, 10000);
-  console.log(uploadFiles, downloadFiles);
-  var difference = uploadFiles - downloadFiles;
-  let percentage = (difference / uploadFiles) * 100;
-  res.render('email', {
-    uploadFiles: uploadFiles,
-    downloadFiles: downloadFiles,
-    percentage: percentage,
-  });
 });
 
 app.listen(port, function () {
