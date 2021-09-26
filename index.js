@@ -88,14 +88,14 @@ app.post('/compress/uploads/:name/:ext', async (req, res) => {
       let transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-          user: 'taruntej.me@gmail.com',
-          pass: 'iamahack',
+          user: PROCESS.env.mail,
+          pass: PROCESS.env.pass,
         },
       });
 
       // Step 2
       var mailOptions = {
-        from: 'taruntej.me@gmail.com',
+        from: PROCESS.env.mail,
         to: recieverMail,
         subject: 'Download your files',
         text: `Hello user , Here is your compressed file, please find your attachment.
